@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>FlyAway</display-name>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  	<servlet-name>firstservlet</servlet-name>
+  	<servlet-class>servlets.firstservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>firstservlet</servlet-name>
+  	<url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>adminlogin</servlet-name>
+  	<servlet-class>servlets.Adminservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>adminlogin</servlet-name>
+  	<url-pattern>/adminlogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>bookingticket</servlet-name>
+  	<servlet-class>servlets.Ticketbooking</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>bookingticket</servlet-name>
+  	<url-pattern>/booking</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>customer</servlet-name>
+  	<servlet-class>servlets.Customerdetail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>customer</servlet-name>
+  	<url-pattern>/details</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Checkout</servlet-name>
+  	<servlet-class>servlets.Receiptpage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Checkout</servlet-name>
+  	<url-pattern>/receiptpage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>addflight</servlet-name>
+  	<servlet-class>servlets.Addflight</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addflight</servlet-name>
+  	<url-pattern>/addflight</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
